@@ -50,16 +50,16 @@ public class Book {
         this.availables = availables;
     }
 
-    public double getInformation() {
-        System.out.println("Title: " + title + ", author: " + author + ", type: " + type);
+    public String getInfo() {
+        System.out.println("Title: " + title + ", author: " + author + ", type: " + type + ", price: ");
     }
 
     public double getPrice(){
-        System.out.println(", price: " + price);
+        return price;
     }
 
     public double getPrice(double priceReduction){
-        System.out.println(", price: " + price*0.25);
+        return priceReduction = price*0.25;
     }
 
     public void setPrice(double price) {
